@@ -21,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
     private Button bmiButton;
     private Button recipeButton;
     private Button bhButton;
+    private Button quizButton;
+    private Button graphButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,25 +31,16 @@ public class MainActivity extends AppCompatActivity {
         bmiButton = (Button) findViewById(R.id.bmiButton);
         bhButton = (Button) findViewById(R.id.benedictHarris);
         recipeButton = (Button) findViewById(R.id.recipe);
-        bmiButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openBmiActivity();
-            }
-        });
+        quizButton = (Button) findViewById(R.id.quiz);
+        graphButton = (Button) findViewById(R.id.graph);
 
-        bhButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openBHActivity();
-            }
-        });
-        recipeButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openRecipeActivity();
-            }
-        });
+        bmiButton.setOnClickListener(v -> openBmiActivity());
+        bhButton.setOnClickListener(v -> openBHActivity());
+        recipeButton.setOnClickListener(v -> openRecipeActivity());
+        quizButton.setOnClickListener(v -> openQuizActivity());
+        graphButton.setOnClickListener(v -> openGraphActivity());
+
+
     };
 
     public void openBmiActivity() {
@@ -60,6 +53,16 @@ public class MainActivity extends AppCompatActivity {
     }
     public void openRecipeActivity() {
         Intent intent = new Intent(this, Recipe.class);
+        startActivity(intent);
+    }
+
+    public void openQuizActivity() {
+        Intent intent = new Intent(this, DietQuiz.class);
+        startActivity(intent);
+    }
+
+    public void openGraphActivity() {
+        Intent intent = new Intent(this, Graph.class);
         startActivity(intent);
     }
 }

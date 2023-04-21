@@ -14,4 +14,26 @@
    <string name="age">Age</string>
    <string name="avatar">Avatar</string>
 
+   <string name="quiz">Diet quiz</string>
+
+   <string name="SCORE_KEY">SCORE</string>
+   <string name="INDEX_KEY">INDEX</string>
+
+   <string name="q1">You should eat more than 3 portions of veggies per day.</string>
+   <string name="q2">Linseed oil is more beneficial than sunseed oil.</string>
+   <string name="q3">3 meals per day is enough.</string>
+   <string name="q4">Calorie intake from fat per gram is higher than from carbs.</string>
+   <string name="q5">One glass of red wine per week is healthy for pregnant woman.</string>
+   <string name="q6">Vegetarian diet is always healthier than meat-based.</string>
+   <string name="star">Star</string>
+
+   <string name="onFinish">Congratulations, you have finished the quiz!</string>
+   <string name="result">You have scored: </string>
+   <string name="finish">Finish</string>
+   <string name="see_stats_here">See stats here</string>
+   <string name="True">TRUE</string>
+   <string name="False">FALSE</string>
+
+   <string name="graph_title">BMI graph</string>
+   <string name="month">Month</string>
 </resources>
